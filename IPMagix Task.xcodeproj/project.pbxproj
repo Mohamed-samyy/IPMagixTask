@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A84FA1CB26610740007F5A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FA1CA26610740007F5A4B /* AppDelegate.swift */; };
+		A84FA1CD26610740007F5A4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FA1CC26610740007F5A4B /* SceneDelegate.swift */; };
+		A84FA1CF26610740007F5A4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FA1CE26610740007F5A4B /* ViewController.swift */; };
+		A84FA1D226610740007F5A4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84FA1D026610740007F5A4B /* Main.storyboard */; };
+		A84FA1D526610740007F5A4B /* IPMagix_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A84FA1D326610740007F5A4B /* IPMagix_Task.xcdatamodeld */; };
+		A84FA1D726610742007F5A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84FA1D626610742007F5A4B /* Assets.xcassets */; };
+		A84FA1DA26610742007F5A4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84FA1D826610742007F5A4B /* LaunchScreen.storyboard */; };
+		A84FA1E526610742007F5A4B /* IPMagix_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FA1E426610742007F5A4B /* IPMagix_TaskTests.swift */; };
+		A84FA1F026610742007F5A4B /* IPMagix_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FA1EF26610742007F5A4B /* IPMagix_TaskUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A84FA1E126610742007F5A4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A84FA1BF2661073F007F5A4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A84FA1C62661073F007F5A4B;
+			remoteInfo = "IPMagix Task";
+		};
+		A84FA1EC26610742007F5A4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A84FA1BF2661073F007F5A4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A84FA1C62661073F007F5A4B;
+			remoteInfo = "IPMagix Task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A84FA1C726610740007F5A4B /* IPMagix Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IPMagix Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84FA1CA26610740007F5A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A84FA1CC26610740007F5A4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A84FA1CE26610740007F5A4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A84FA1D126610740007F5A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A84FA1D426610740007F5A4B /* IPMagix_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IPMagix_Task.xcdatamodel; sourceTree = "<group>"; };
+		A84FA1D626610742007F5A4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A84FA1D926610742007F5A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A84FA1DB26610742007F5A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A84FA1E026610742007F5A4B /* IPMagix TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IPMagix TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84FA1E426610742007F5A4B /* IPMagix_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPMagix_TaskTests.swift; sourceTree = "<group>"; };
+		A84FA1E626610742007F5A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A84FA1EB26610742007F5A4B /* IPMagix TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IPMagix TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84FA1EF26610742007F5A4B /* IPMagix_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPMagix_TaskUITests.swift; sourceTree = "<group>"; };
+		A84FA1F126610742007F5A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A84FA1C42661073F007F5A4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84FA1DD26610742007F5A4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84FA1E826610742007F5A4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A84FA1BE2661073F007F5A4B = {
+			isa = PBXGroup;
+			children = (
+				A84FA1C926610740007F5A4B /* IPMagix Task */,
+				A84FA1E326610742007F5A4B /* IPMagix TaskTests */,
+				A84FA1EE26610742007F5A4B /* IPMagix TaskUITests */,
+				A84FA1C826610740007F5A4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A84FA1C826610740007F5A4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A84FA1C726610740007F5A4B /* IPMagix Task.app */,
+				A84FA1E026610742007F5A4B /* IPMagix TaskTests.xctest */,
+				A84FA1EB26610742007F5A4B /* IPMagix TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A84FA1C926610740007F5A4B /* IPMagix Task */ = {
+			isa = PBXGroup;
+			children = (
+				A84FA1CA26610740007F5A4B /* AppDelegate.swift */,
+				A84FA1CC26610740007F5A4B /* SceneDelegate.swift */,
+				A84FA1CE26610740007F5A4B /* ViewController.swift */,
+				A84FA1D026610740007F5A4B /* Main.storyboard */,
+				A84FA1D626610742007F5A4B /* Assets.xcassets */,
+				A84FA1D826610742007F5A4B /* LaunchScreen.storyboard */,
+				A84FA1DB26610742007F5A4B /* Info.plist */,
+				A84FA1D326610740007F5A4B /* IPMagix_Task.xcdatamodeld */,
+			);
+			path = "IPMagix Task";
+			sourceTree = "<group>";
+		};
+		A84FA1E326610742007F5A4B /* IPMagix TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				A84FA1E426610742007F5A4B /* IPMagix_TaskTests.swift */,
+				A84FA1E626610742007F5A4B /* Info.plist */,
+			);
+			path = "IPMagix TaskTests";
+			sourceTree = "<group>";
+		};
+		A84FA1EE26610742007F5A4B /* IPMagix TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A84FA1EF26610742007F5A4B /* IPMagix_TaskUITests.swift */,
+				A84FA1F126610742007F5A4B /* Info.plist */,
+			);
+			path = "IPMagix TaskUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A84FA1C62661073F007F5A4B /* IPMagix Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A84FA1F426610742007F5A4B /* Build configuration list for PBXNativeTarget "IPMagix Task" */;
+			buildPhases = (
+				A84FA1C32661073F007F5A4B /* Sources */,
+				A84FA1C42661073F007F5A4B /* Frameworks */,
+				A84FA1C52661073F007F5A4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IPMagix Task";
+			productName = "IPMagix Task";
+			productReference = A84FA1C726610740007F5A4B /* IPMagix Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A84FA1DF26610742007F5A4B /* IPMagix TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A84FA1F726610742007F5A4B /* Build configuration list for PBXNativeTarget "IPMagix TaskTests" */;
+			buildPhases = (
+				A84FA1DC26610742007F5A4B /* Sources */,
+				A84FA1DD26610742007F5A4B /* Frameworks */,
+				A84FA1DE26610742007F5A4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A84FA1E226610742007F5A4B /* PBXTargetDependency */,
+			);
+			name = "IPMagix TaskTests";
+			productName = "IPMagix TaskTests";
+			productReference = A84FA1E026610742007F5A4B /* IPMagix TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A84FA1EA26610742007F5A4B /* IPMagix TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A84FA1FA26610742007F5A4B /* Build configuration list for PBXNativeTarget "IPMagix TaskUITests" */;
+			buildPhases = (
+				A84FA1E726610742007F5A4B /* Sources */,
+				A84FA1E826610742007F5A4B /* Frameworks */,
+				A84FA1E926610742007F5A4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A84FA1ED26610742007F5A4B /* PBXTargetDependency */,
+			);
+			name = "IPMagix TaskUITests";
+			productName = "IPMagix TaskUITests";
+			productReference = A84FA1EB26610742007F5A4B /* IPMagix TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A84FA1BF2661073F007F5A4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					A84FA1C62661073F007F5A4B = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					A84FA1DF26610742007F5A4B = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = A84FA1C62661073F007F5A4B;
+					};
+					A84FA1EA26610742007F5A4B = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = A84FA1C62661073F007F5A4B;
+					};
+				};
+			};
+			buildConfigurationList = A84FA1C22661073F007F5A4B /* Build configuration list for PBXProject "IPMagix Task" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A84FA1BE2661073F007F5A4B;
+			productRefGroup = A84FA1C826610740007F5A4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A84FA1C62661073F007F5A4B /* IPMagix Task */,
+				A84FA1DF26610742007F5A4B /* IPMagix TaskTests */,
+				A84FA1EA26610742007F5A4B /* IPMagix TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A84FA1C52661073F007F5A4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84FA1DA26610742007F5A4B /* LaunchScreen.storyboard in Resources */,
+				A84FA1D726610742007F5A4B /* Assets.xcassets in Resources */,
+				A84FA1D226610740007F5A4B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84FA1DE26610742007F5A4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84FA1E926610742007F5A4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A84FA1C32661073F007F5A4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84FA1CF26610740007F5A4B /* ViewController.swift in Sources */,
+				A84FA1CB26610740007F5A4B /* AppDelegate.swift in Sources */,
+				A84FA1D526610740007F5A4B /* IPMagix_Task.xcdatamodeld in Sources */,
+				A84FA1CD26610740007F5A4B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84FA1DC26610742007F5A4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84FA1E526610742007F5A4B /* IPMagix_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84FA1E726610742007F5A4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84FA1F026610742007F5A4B /* IPMagix_TaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A84FA1E226610742007F5A4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A84FA1C62661073F007F5A4B /* IPMagix Task */;
+			targetProxy = A84FA1E126610742007F5A4B /* PBXContainerItemProxy */;
+		};
+		A84FA1ED26610742007F5A4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A84FA1C62661073F007F5A4B /* IPMagix Task */;
+			targetProxy = A84FA1EC26610742007F5A4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A84FA1D026610740007F5A4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A84FA1D126610740007F5A4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A84FA1D826610742007F5A4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A84FA1D926610742007F5A4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A84FA1F226610742007F5A4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A84FA1F326610742007F5A4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A84FA1F526610742007F5A4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y2SL74F47;
+				INFOPLIST_FILE = "IPMagix Task/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samy.IPMagix-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A84FA1F626610742007F5A4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y2SL74F47;
+				INFOPLIST_FILE = "IPMagix Task/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samy.IPMagix-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A84FA1F826610742007F5A4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y2SL74F47;
+				INFOPLIST_FILE = "IPMagix TaskTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samy.IPMagix-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPMagix Task.app/IPMagix Task";
+			};
+			name = Debug;
+		};
+		A84FA1F926610742007F5A4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y2SL74F47;
+				INFOPLIST_FILE = "IPMagix TaskTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samy.IPMagix-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPMagix Task.app/IPMagix Task";
+			};
+			name = Release;
+		};
+		A84FA1FB26610742007F5A4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y2SL74F47;
+				INFOPLIST_FILE = "IPMagix TaskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samy.IPMagix-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "IPMagix Task";
+			};
+			name = Debug;
+		};
+		A84FA1FC26610742007F5A4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y2SL74F47;
+				INFOPLIST_FILE = "IPMagix TaskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samy.IPMagix-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "IPMagix Task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A84FA1C22661073F007F5A4B /* Build configuration list for PBXProject "IPMagix Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84FA1F226610742007F5A4B /* Debug */,
+				A84FA1F326610742007F5A4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A84FA1F426610742007F5A4B /* Build configuration list for PBXNativeTarget "IPMagix Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84FA1F526610742007F5A4B /* Debug */,
+				A84FA1F626610742007F5A4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A84FA1F726610742007F5A4B /* Build configuration list for PBXNativeTarget "IPMagix TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84FA1F826610742007F5A4B /* Debug */,
+				A84FA1F926610742007F5A4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A84FA1FA26610742007F5A4B /* Build configuration list for PBXNativeTarget "IPMagix TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84FA1FB26610742007F5A4B /* Debug */,
+				A84FA1FC26610742007F5A4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A84FA1D326610740007F5A4B /* IPMagix_Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A84FA1D426610740007F5A4B /* IPMagix_Task.xcdatamodel */,
+			);
+			currentVersion = A84FA1D426610740007F5A4B /* IPMagix_Task.xcdatamodel */;
+			path = IPMagix_Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A84FA1BF2661073F007F5A4B /* Project object */;
+}
