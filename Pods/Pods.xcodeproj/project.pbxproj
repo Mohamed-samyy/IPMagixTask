@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FB82FBF4E9944D337A6A093CB808C6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1C82FB8585297795374F0C58A7A57B08 /* Pods-IPMagix Task-IPMagix TaskUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E28B26C8EA7B63B106E0DA80BAA4CA /* Pods-IPMagix Task-IPMagix TaskUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6D019D4E241F0E31D07D448043F0BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		66BC06381B39AE778FE6A4F22D4337C8 /* Pods-IPMagix Task-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05678628E7BCC45339BB54A25646877D /* Pods-IPMagix Task-dummy.m */; };
+		8DD8B7B50D6BC169D92203FC38E71712 /* Pods-IPMagix TaskTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E83D86624BBB98593F508FA2E4D7955 /* Pods-IPMagix TaskTests-dummy.m */; };
+		A3FD0983FF487F5D35F44242C6296071 /* Pods-IPMagix Task-IPMagix TaskUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C640F7F22B0D5344B676A15C665B69F /* Pods-IPMagix Task-IPMagix TaskUITests-dummy.m */; };
+		A55C82235E95AB62BFA4E21B405A2E9E /* Pods-IPMagix TaskTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B892D971D9B3B77B125688EB887F0C5 /* Pods-IPMagix TaskTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB163D38E274810DA6A29790E51CC6B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EB741F006F0AB0EEA0950F30D1C7D0D6 /* Pods-IPMagix Task-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D0857E586C9CF6CF4CEBE45C74C419 /* Pods-IPMagix Task-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A406144A655F49C84B6230F3C6AB2390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11FC61F6DCC0949B8BBBEE177F283A40;
+			remoteInfo = "Pods-IPMagix Task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03BB7F8B94A5A58D135355F80BBA80BB /* Pods-IPMagix TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IPMagix TaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		05678628E7BCC45339BB54A25646877D /* Pods-IPMagix Task-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IPMagix Task-dummy.m"; sourceTree = "<group>"; };
+		0E83D86624BBB98593F508FA2E4D7955 /* Pods-IPMagix TaskTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IPMagix TaskTests-dummy.m"; sourceTree = "<group>"; };
+		11F63637D177B14A00402D9FC1599AC1 /* Pods-IPMagix Task-IPMagix TaskUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IPMagix Task-IPMagix TaskUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24D0857E586C9CF6CF4CEBE45C74C419 /* Pods-IPMagix Task-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IPMagix Task-umbrella.h"; sourceTree = "<group>"; };
+		2C951BC0A10D06DC6AF30AE2F496E7F1 /* Pods-IPMagix TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IPMagix TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F8656C60A50CA89A918CF3CAC8147CF /* Pods-IPMagix Task-IPMagix TaskUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IPMagix Task-IPMagix TaskUITests.modulemap"; sourceTree = "<group>"; };
+		30FBED6CFB9D8E00395BC432BF458019 /* Pods-IPMagix Task-IPMagix TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IPMagix Task-IPMagix TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37D060D2332C5CB3C269A8F079422704 /* Pods-IPMagix TaskTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IPMagix TaskTests-Info.plist"; sourceTree = "<group>"; };
+		3BF87DF895A775D8140556E294DEBCD4 /* Pods_IPMagix_TaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IPMagix_TaskTests.framework; path = "Pods-IPMagix TaskTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4293D2E9313DAB07EAB837553E73B731 /* Pods-IPMagix Task-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IPMagix Task-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4683B1BFAEF72A76D3CF8090DC863338 /* Pods-IPMagix Task-IPMagix TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IPMagix Task-IPMagix TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		48E28B26C8EA7B63B106E0DA80BAA4CA /* Pods-IPMagix Task-IPMagix TaskUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IPMagix Task-IPMagix TaskUITests-umbrella.h"; sourceTree = "<group>"; };
+		54CF946DF0B8043054ECF1D2DCCF5ABC /* Pods-IPMagix Task-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IPMagix Task-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C640F7F22B0D5344B676A15C665B69F /* Pods-IPMagix Task-IPMagix TaskUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IPMagix Task-IPMagix TaskUITests-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B892D971D9B3B77B125688EB887F0C5 /* Pods-IPMagix TaskTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IPMagix TaskTests-umbrella.h"; sourceTree = "<group>"; };
+		7D518CFDB70E3F75DE2E0C004B0F629F /* Pods_IPMagix_Task_IPMagix_TaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IPMagix_Task_IPMagix_TaskUITests.framework; path = "Pods-IPMagix Task-IPMagix TaskUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87AF347A8751F5694ED516B69987A934 /* Pods-IPMagix Task-IPMagix TaskUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IPMagix Task-IPMagix TaskUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8924C5996290E580E6701512DE9F3C1D /* Pods-IPMagix TaskTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IPMagix TaskTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C55A7A945AA8845F93F62010025FD95 /* Pods-IPMagix Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IPMagix Task.release.xcconfig"; sourceTree = "<group>"; };
+		9087AAB38C4377F80C93544123FC3FA0 /* Pods-IPMagix Task.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IPMagix Task.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F02BB6F662FEA062CDDA54DED883A8D /* Pods_IPMagix_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IPMagix_Task.framework; path = "Pods-IPMagix Task.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41FBDEBB595EB89BF17769B76904ECF /* Pods-IPMagix Task-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IPMagix Task-Info.plist"; sourceTree = "<group>"; };
+		BAF99FD76149D8700BF498004D9FA594 /* Pods-IPMagix TaskTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IPMagix TaskTests.modulemap"; sourceTree = "<group>"; };
+		C44BFA8B9C27570B3F5DD6E83806C982 /* Pods-IPMagix Task-IPMagix TaskUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IPMagix Task-IPMagix TaskUITests-Info.plist"; sourceTree = "<group>"; };
+		D0286C7CCCF2EDABA8C05D212AA65B1C /* Pods-IPMagix TaskTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IPMagix TaskTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E86C87504660B04AA447845BCEC84BB8 /* Pods-IPMagix Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IPMagix Task.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A07CDC6FBF129CDDE02B3E4D22611E02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB163D38E274810DA6A29790E51CC6B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CBB9143E4767D7DF9D46FB4C340EA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A6D019D4E241F0E31D07D448043F0BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB8151C9DBD0F1755A7B923BED6D0547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB82FBF4E9944D337A6A093CB808C6F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12028E8729B5B76A0E2B2FDC298DA47F /* Pods-IPMagix Task-IPMagix TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F8656C60A50CA89A918CF3CAC8147CF /* Pods-IPMagix Task-IPMagix TaskUITests.modulemap */,
+				11F63637D177B14A00402D9FC1599AC1 /* Pods-IPMagix Task-IPMagix TaskUITests-acknowledgements.markdown */,
+				87AF347A8751F5694ED516B69987A934 /* Pods-IPMagix Task-IPMagix TaskUITests-acknowledgements.plist */,
+				6C640F7F22B0D5344B676A15C665B69F /* Pods-IPMagix Task-IPMagix TaskUITests-dummy.m */,
+				C44BFA8B9C27570B3F5DD6E83806C982 /* Pods-IPMagix Task-IPMagix TaskUITests-Info.plist */,
+				48E28B26C8EA7B63B106E0DA80BAA4CA /* Pods-IPMagix Task-IPMagix TaskUITests-umbrella.h */,
+				30FBED6CFB9D8E00395BC432BF458019 /* Pods-IPMagix Task-IPMagix TaskUITests.debug.xcconfig */,
+				4683B1BFAEF72A76D3CF8090DC863338 /* Pods-IPMagix Task-IPMagix TaskUITests.release.xcconfig */,
+			);
+			name = "Pods-IPMagix Task-IPMagix TaskUITests";
+			path = "Target Support Files/Pods-IPMagix Task-IPMagix TaskUITests";
+			sourceTree = "<group>";
+		};
+		3DB7B1714B34847622327F31BCA61FC8 /* Pods-IPMagix TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAF99FD76149D8700BF498004D9FA594 /* Pods-IPMagix TaskTests.modulemap */,
+				8924C5996290E580E6701512DE9F3C1D /* Pods-IPMagix TaskTests-acknowledgements.markdown */,
+				D0286C7CCCF2EDABA8C05D212AA65B1C /* Pods-IPMagix TaskTests-acknowledgements.plist */,
+				0E83D86624BBB98593F508FA2E4D7955 /* Pods-IPMagix TaskTests-dummy.m */,
+				37D060D2332C5CB3C269A8F079422704 /* Pods-IPMagix TaskTests-Info.plist */,
+				7B892D971D9B3B77B125688EB887F0C5 /* Pods-IPMagix TaskTests-umbrella.h */,
+				2C951BC0A10D06DC6AF30AE2F496E7F1 /* Pods-IPMagix TaskTests.debug.xcconfig */,
+				03BB7F8B94A5A58D135355F80BBA80BB /* Pods-IPMagix TaskTests.release.xcconfig */,
+			);
+			name = "Pods-IPMagix TaskTests";
+			path = "Target Support Files/Pods-IPMagix TaskTests";
+			sourceTree = "<group>";
+		};
+		4116AFB49F3D2C1499FC980752FEBFB9 /* Pods-IPMagix Task */ = {
+			isa = PBXGroup;
+			children = (
+				9087AAB38C4377F80C93544123FC3FA0 /* Pods-IPMagix Task.modulemap */,
+				4293D2E9313DAB07EAB837553E73B731 /* Pods-IPMagix Task-acknowledgements.markdown */,
+				54CF946DF0B8043054ECF1D2DCCF5ABC /* Pods-IPMagix Task-acknowledgements.plist */,
+				05678628E7BCC45339BB54A25646877D /* Pods-IPMagix Task-dummy.m */,
+				A41FBDEBB595EB89BF17769B76904ECF /* Pods-IPMagix Task-Info.plist */,
+				24D0857E586C9CF6CF4CEBE45C74C419 /* Pods-IPMagix Task-umbrella.h */,
+				E86C87504660B04AA447845BCEC84BB8 /* Pods-IPMagix Task.debug.xcconfig */,
+				8C55A7A945AA8845F93F62010025FD95 /* Pods-IPMagix Task.release.xcconfig */,
+			);
+			name = "Pods-IPMagix Task";
+			path = "Target Support Files/Pods-IPMagix Task";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		80EF3E5EA0F2D08798D85F3D96D248D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F02BB6F662FEA062CDDA54DED883A8D /* Pods_IPMagix_Task.framework */,
+				7D518CFDB70E3F75DE2E0C004B0F629F /* Pods_IPMagix_Task_IPMagix_TaskUITests.framework */,
+				3BF87DF895A775D8140556E294DEBCD4 /* Pods_IPMagix_TaskTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				80EF3E5EA0F2D08798D85F3D96D248D8 /* Products */,
+				D89C3054AA6076D8F589AECB2E0536AE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D89C3054AA6076D8F589AECB2E0536AE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4116AFB49F3D2C1499FC980752FEBFB9 /* Pods-IPMagix Task */,
+				12028E8729B5B76A0E2B2FDC298DA47F /* Pods-IPMagix Task-IPMagix TaskUITests */,
+				3DB7B1714B34847622327F31BCA61FC8 /* Pods-IPMagix TaskTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		18DFC06CDC5CC3EC6B8061F299BAF4C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55C82235E95AB62BFA4E21B405A2E9E /* Pods-IPMagix TaskTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		672EDC65E9167C92ECF62E0F8EA36C90 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB741F006F0AB0EEA0950F30D1C7D0D6 /* Pods-IPMagix Task-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A3F927568639901C8D5DE0C21A7E229 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C82FB8585297795374F0C58A7A57B08 /* Pods-IPMagix Task-IPMagix TaskUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		11FC61F6DCC0949B8BBBEE177F283A40 /* Pods-IPMagix Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05EE77E9F6CD306057F782069CA49B58 /* Build configuration list for PBXNativeTarget "Pods-IPMagix Task" */;
+			buildPhases = (
+				672EDC65E9167C92ECF62E0F8EA36C90 /* Headers */,
+				EA2D6BF94CC4CBF704AF34389881E1AB /* Sources */,
+				EB8151C9DBD0F1755A7B923BED6D0547 /* Frameworks */,
+				37BCA0188A7C228A3764804C79614370 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-IPMagix Task";
+			productName = "Pods-IPMagix Task";
+			productReference = 9F02BB6F662FEA062CDDA54DED883A8D /* Pods_IPMagix_Task.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		374F5F8E37FDF5DB8F0402B4E5EEDB21 /* Pods-IPMagix Task-IPMagix TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BFD883B39F20FA4B16130455180ADDA /* Build configuration list for PBXNativeTarget "Pods-IPMagix Task-IPMagix TaskUITests" */;
+			buildPhases = (
+				6A3F927568639901C8D5DE0C21A7E229 /* Headers */,
+				67A8FE26DA2B8C5B72C577D219C1137B /* Sources */,
+				A8CBB9143E4767D7DF9D46FB4C340EA2 /* Frameworks */,
+				D98BCCF70E5D1446FF6B556ACC09AF43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-IPMagix Task-IPMagix TaskUITests";
+			productName = "Pods-IPMagix Task-IPMagix TaskUITests";
+			productReference = 7D518CFDB70E3F75DE2E0C004B0F629F /* Pods_IPMagix_Task_IPMagix_TaskUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D82C9CA6261C0129A233AEB5377AC3F6 /* Pods-IPMagix TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D289BC8402E7C650D6F9B663DB632284 /* Build configuration list for PBXNativeTarget "Pods-IPMagix TaskTests" */;
+			buildPhases = (
+				18DFC06CDC5CC3EC6B8061F299BAF4C5 /* Headers */,
+				7DFEAB4B71D401546EAF7D1CEECC876A /* Sources */,
+				A07CDC6FBF129CDDE02B3E4D22611E02 /* Frameworks */,
+				D743A378857FFA3E7A23DC151D186ABD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD58DB811A2F26800B1FBE7BF9374A16 /* PBXTargetDependency */,
+			);
+			name = "Pods-IPMagix TaskTests";
+			productName = "Pods-IPMagix TaskTests";
+			productReference = 3BF87DF895A775D8140556E294DEBCD4 /* Pods_IPMagix_TaskTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 80EF3E5EA0F2D08798D85F3D96D248D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11FC61F6DCC0949B8BBBEE177F283A40 /* Pods-IPMagix Task */,
+				374F5F8E37FDF5DB8F0402B4E5EEDB21 /* Pods-IPMagix Task-IPMagix TaskUITests */,
+				D82C9CA6261C0129A233AEB5377AC3F6 /* Pods-IPMagix TaskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37BCA0188A7C228A3764804C79614370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D743A378857FFA3E7A23DC151D186ABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98BCCF70E5D1446FF6B556ACC09AF43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67A8FE26DA2B8C5B72C577D219C1137B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FD0983FF487F5D35F44242C6296071 /* Pods-IPMagix Task-IPMagix TaskUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DFEAB4B71D401546EAF7D1CEECC876A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD8B7B50D6BC169D92203FC38E71712 /* Pods-IPMagix TaskTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2D6BF94CC4CBF704AF34389881E1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BC06381B39AE778FE6A4F22D4337C8 /* Pods-IPMagix Task-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD58DB811A2F26800B1FBE7BF9374A16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-IPMagix Task";
+			target = 11FC61F6DCC0949B8BBBEE177F283A40 /* Pods-IPMagix Task */;
+			targetProxy = A406144A655F49C84B6230F3C6AB2390 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		21E68CE42184443A43BC42361059D85E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03BB7F8B94A5A58D135355F80BBA80BB /* Pods-IPMagix TaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IPMagix TaskTests/Pods-IPMagix TaskTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IPMagix TaskTests/Pods-IPMagix TaskTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2FE41B54DB1A6B94D43B31EB35C41C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4683B1BFAEF72A76D3CF8090DC863338 /* Pods-IPMagix Task-IPMagix TaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IPMagix Task-IPMagix TaskUITests/Pods-IPMagix Task-IPMagix TaskUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IPMagix Task-IPMagix TaskUITests/Pods-IPMagix Task-IPMagix TaskUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		593F10BFFA94DAC7D6E17FB8A7F32D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A0374B8CF9A7D6A45F6D116D698D1C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B49213C7614DEC8E8FBD43404104EE49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E86C87504660B04AA447845BCEC84BB8 /* Pods-IPMagix Task.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IPMagix Task/Pods-IPMagix Task-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IPMagix Task/Pods-IPMagix Task.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D145BC59A28E7604EAC8877045D09DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C55A7A945AA8845F93F62010025FD95 /* Pods-IPMagix Task.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IPMagix Task/Pods-IPMagix Task-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IPMagix Task/Pods-IPMagix Task.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3B85C18F02DA279BBABED9BB09DD630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C951BC0A10D06DC6AF30AE2F496E7F1 /* Pods-IPMagix TaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IPMagix TaskTests/Pods-IPMagix TaskTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IPMagix TaskTests/Pods-IPMagix TaskTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC6B2D397AB22E6F2130447E719AD1C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30FBED6CFB9D8E00395BC432BF458019 /* Pods-IPMagix Task-IPMagix TaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IPMagix Task-IPMagix TaskUITests/Pods-IPMagix Task-IPMagix TaskUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IPMagix Task-IPMagix TaskUITests/Pods-IPMagix Task-IPMagix TaskUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05EE77E9F6CD306057F782069CA49B58 /* Build configuration list for PBXNativeTarget "Pods-IPMagix Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49213C7614DEC8E8FBD43404104EE49 /* Debug */,
+				D145BC59A28E7604EAC8877045D09DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BFD883B39F20FA4B16130455180ADDA /* Build configuration list for PBXNativeTarget "Pods-IPMagix Task-IPMagix TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6B2D397AB22E6F2130447E719AD1C3 /* Debug */,
+				2FE41B54DB1A6B94D43B31EB35C41C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0374B8CF9A7D6A45F6D116D698D1C19 /* Debug */,
+				593F10BFFA94DAC7D6E17FB8A7F32D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D289BC8402E7C650D6F9B663DB632284 /* Build configuration list for PBXNativeTarget "Pods-IPMagix TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B85C18F02DA279BBABED9BB09DD630 /* Debug */,
+				21E68CE42184443A43BC42361059D85E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

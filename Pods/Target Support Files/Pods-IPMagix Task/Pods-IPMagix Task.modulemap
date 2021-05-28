@@ -1,0 +1,6 @@
+framework module Pods_IPMagix_Task {
+  umbrella header "Pods-IPMagix Task-umbrella.h"
+
+  export *
+  module * { export * }
+}

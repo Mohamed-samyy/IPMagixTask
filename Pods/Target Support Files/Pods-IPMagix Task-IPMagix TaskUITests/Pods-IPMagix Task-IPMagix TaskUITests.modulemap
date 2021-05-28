@@ -1,0 +1,6 @@
+framework module Pods_IPMagix_Task_IPMagix_TaskUITests {
+  umbrella header "Pods-IPMagix Task-IPMagix TaskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
