@@ -6,10 +6,15 @@ target 'IPMagix Task' do
   use_frameworks!
 
   # Pods for IPMagix Task
+  pod 'Alamofire' , '~> 5.0.1'
+  pod 'Kingfisher','~> 5.13.0'
+  pod 'NVActivityIndicatorView'
+
 
   target 'IPMagix TaskTests' do
     inherit! :search_paths
     # Pods for testing
+
   end
 
   target 'IPMagix TaskUITests' do

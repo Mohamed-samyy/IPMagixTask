@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,13 +12,28 @@
 		A20D9B30E6B9665408A9655F /* Pods_IPMagix_Task_IPMagix_TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE30C4C329062E0AF2317BF /* Pods_IPMagix_Task_IPMagix_TaskUITests.framework */; };
 		A84FA1CB26610740007F5A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FA1CA26610740007F5A4B /* AppDelegate.swift */; };
 		A84FA1CD26610740007F5A4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FA1CC26610740007F5A4B /* SceneDelegate.swift */; };
-		A84FA1CF26610740007F5A4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FA1CE26610740007F5A4B /* ViewController.swift */; };
+		A84FA1CF26610740007F5A4B /* ListPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FA1CE26610740007F5A4B /* ListPhotosViewController.swift */; };
 		A84FA1D226610740007F5A4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84FA1D026610740007F5A4B /* Main.storyboard */; };
 		A84FA1D526610740007F5A4B /* IPMagix_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A84FA1D326610740007F5A4B /* IPMagix_Task.xcdatamodeld */; };
 		A84FA1D726610742007F5A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84FA1D626610742007F5A4B /* Assets.xcassets */; };
 		A84FA1DA26610742007F5A4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84FA1D826610742007F5A4B /* LaunchScreen.storyboard */; };
 		A84FA1E526610742007F5A4B /* IPMagix_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FA1E426610742007F5A4B /* IPMagix_TaskTests.swift */; };
 		A84FA1F026610742007F5A4B /* IPMagix_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FA1EF26610742007F5A4B /* IPMagix_TaskUITests.swift */; };
+		A8EF54D52661168600236DC5 /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF54D42661168600236DC5 /* PhotosTableViewCell.swift */; };
+		A8EF54DD2661196200236DC5 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF54DC2661196200236DC5 /* PhotosViewModel.swift */; };
+		A8EF54E826611C0A00236DC5 /* UIImageExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF54E726611C0A00236DC5 /* UIImageExtentions.swift */; };
+		A8EF54F026611C5D00236DC5 /* StringExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF54EF26611C5D00236DC5 /* StringExtentions.swift */; };
+		A8EF553826628FD800236DC5 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF553726628FD800236DC5 /* Photo.swift */; };
+		A8EF55532663040700236DC5 /* FlickrResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF55522663040700236DC5 /* FlickrResponse.swift */; };
+		A8EF5576266306FC00236DC5 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF5575266306FC00236DC5 /* Networking.swift */; };
+		A8EF557B2663075A00236DC5 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF557A2663075A00236DC5 /* Alert.swift */; };
+		A8EF5581266308F100236DC5 /* FlickrApisPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF5580266308F100236DC5 /* FlickrApisPresenter.swift */; };
+		A8EF559B2663AA7C00236DC5 /* FullScreenPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF559A2663AA7C00236DC5 /* FullScreenPhotoViewController.swift */; };
+		A8EF55C02663B1D700236DC5 /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF55BF2663B1D700236DC5 /* LoadingSpinner.swift */; };
+		A8EF55EA2663B65F00236DC5 /* UIScrollView+InfiniteScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EF55E92663B65F00236DC5 /* UIScrollView+InfiniteScroll.m */; };
+		A8EF55F02663B77400236DC5 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF55EF2663B77400236DC5 /* CoreData.swift */; };
+		A8EF55F52663B7D200236DC5 /* CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF55F42663B7D200236DC5 /* CoreDataProperties.swift */; };
+		A8EF55FD2663B8C000236DC5 /* CoreDataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF55FC2663B8C000236DC5 /* CoreDataManger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +62,7 @@
 		A84FA1C726610740007F5A4B /* IPMagix Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IPMagix Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84FA1CA26610740007F5A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A84FA1CC26610740007F5A4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A84FA1CE26610740007F5A4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A84FA1CE26610740007F5A4B /* ListPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPhotosViewController.swift; sourceTree = "<group>"; };
 		A84FA1D126610740007F5A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A84FA1D426610740007F5A4B /* IPMagix_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IPMagix_Task.xcdatamodel; sourceTree = "<group>"; };
 		A84FA1D626610742007F5A4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +74,23 @@
 		A84FA1EB26610742007F5A4B /* IPMagix TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IPMagix TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84FA1EF26610742007F5A4B /* IPMagix_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPMagix_TaskUITests.swift; sourceTree = "<group>"; };
 		A84FA1F126610742007F5A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8EF54D42661168600236DC5 /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
+		A8EF54DC2661196200236DC5 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		A8EF54E726611C0A00236DC5 /* UIImageExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtentions.swift; sourceTree = "<group>"; };
+		A8EF54EF26611C5D00236DC5 /* StringExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtentions.swift; sourceTree = "<group>"; };
+		A8EF553726628FD800236DC5 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		A8EF55522663040700236DC5 /* FlickrResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrResponse.swift; sourceTree = "<group>"; };
+		A8EF5575266306FC00236DC5 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		A8EF557A2663075A00236DC5 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		A8EF5580266308F100236DC5 /* FlickrApisPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrApisPresenter.swift; sourceTree = "<group>"; };
+		A8EF559A2663AA7C00236DC5 /* FullScreenPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPhotoViewController.swift; sourceTree = "<group>"; };
+		A8EF55BF2663B1D700236DC5 /* LoadingSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinner.swift; sourceTree = "<group>"; };
+		A8EF55E72663B65E00236DC5 /* IPMagix Task-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IPMagix Task-Bridging-Header.h"; sourceTree = "<group>"; };
+		A8EF55E82663B65F00236DC5 /* UIScrollView+InfiniteScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+InfiniteScroll.h"; sourceTree = "<group>"; };
+		A8EF55E92663B65F00236DC5 /* UIScrollView+InfiniteScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+InfiniteScroll.m"; sourceTree = "<group>"; };
+		A8EF55EF2663B77400236DC5 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		A8EF55F42663B7D200236DC5 /* CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProperties.swift; sourceTree = "<group>"; };
+		A8EF55FC2663B8C000236DC5 /* CoreDataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManger.swift; sourceTree = "<group>"; };
 		A9FE31E5DA6C7E22FC729627 /* Pods_IPMagix_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPMagix_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CF5DE22AF9A833E2B58E59 /* Pods-IPMagix Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPMagix Task.release.xcconfig"; path = "Target Support Files/Pods-IPMagix Task/Pods-IPMagix Task.release.xcconfig"; sourceTree = "<group>"; };
 		EFABAFA1B87699949CCD8BC3 /* Pods-IPMagix Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPMagix Task.debug.xcconfig"; path = "Target Support Files/Pods-IPMagix Task/Pods-IPMagix Task.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,11 +160,17 @@
 		A84FA1C926610740007F5A4B /* IPMagix Task */ = {
 			isa = PBXGroup;
 			children = (
-				A84FA1CA26610740007F5A4B /* AppDelegate.swift */,
-				A84FA1CC26610740007F5A4B /* SceneDelegate.swift */,
-				A84FA1CE26610740007F5A4B /* ViewController.swift */,
+				A8EF54D02661155B00236DC5 /* AppDelegate */,
+				A8EF54E626611BD200236DC5 /* Helpers */,
+				A8EF5564266305BB00236DC5 /* Networking */,
+				A8EF553526628F3D00236DC5 /* ViewController */,
+				A8EF5547266300D500236DC5 /* ViewModel */,
+				A8EF557F266308B800236DC5 /* Presenter */,
+				A8EF553626628FC000236DC5 /* Model */,
+				A8EF55EE2663B6F000236DC5 /* CoreData */,
+				A8EF55482663013600236DC5 /* Cells */,
+				A8EF55632663053D00236DC5 /* Resources */,
 				A84FA1D026610740007F5A4B /* Main.storyboard */,
-				A84FA1D626610742007F5A4B /* Assets.xcassets */,
 				A84FA1D826610742007F5A4B /* LaunchScreen.storyboard */,
 				A84FA1DB26610742007F5A4B /* Info.plist */,
 				A84FA1D326610740007F5A4B /* IPMagix_Task.xcdatamodeld */,
@@ -158,6 +196,97 @@
 			path = "IPMagix TaskUITests";
 			sourceTree = "<group>";
 		};
+		A8EF54D02661155B00236DC5 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A84FA1CA26610740007F5A4B /* AppDelegate.swift */,
+				A84FA1CC26610740007F5A4B /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A8EF54E626611BD200236DC5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8EF54E726611C0A00236DC5 /* UIImageExtentions.swift */,
+				A8EF54EF26611C5D00236DC5 /* StringExtentions.swift */,
+				A8EF557A2663075A00236DC5 /* Alert.swift */,
+				A8EF55E82663B65F00236DC5 /* UIScrollView+InfiniteScroll.h */,
+				A8EF55E92663B65F00236DC5 /* UIScrollView+InfiniteScroll.m */,
+				A8EF55E72663B65E00236DC5 /* IPMagix Task-Bridging-Header.h */,
+				A8EF55BF2663B1D700236DC5 /* LoadingSpinner.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A8EF553526628F3D00236DC5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A84FA1CE26610740007F5A4B /* ListPhotosViewController.swift */,
+				A8EF559A2663AA7C00236DC5 /* FullScreenPhotoViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A8EF553626628FC000236DC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8EF55522663040700236DC5 /* FlickrResponse.swift */,
+				A8EF553726628FD800236DC5 /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8EF5547266300D500236DC5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8EF54DC2661196200236DC5 /* PhotosViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8EF55482663013600236DC5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A8EF54D42661168600236DC5 /* PhotosTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A8EF55632663053D00236DC5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A84FA1D626610742007F5A4B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A8EF5564266305BB00236DC5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A8EF5575266306FC00236DC5 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A8EF557F266308B800236DC5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A8EF5580266308F100236DC5 /* FlickrApisPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A8EF55EE2663B6F000236DC5 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A8EF55EF2663B77400236DC5 /* CoreData.swift */,
+				A8EF55F42663B7D200236DC5 /* CoreDataProperties.swift */,
+				A8EF55FC2663B8C000236DC5 /* CoreDataManger.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		F3E5F0F871686AD50C0F51AE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +297,6 @@
 				7DA2708D89AE98545CEE5BC2 /* Pods-IPMagix TaskTests.debug.xcconfig */,
 				1D5B75D79B5BF5552D4413FF /* Pods-IPMagix TaskTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -183,6 +311,7 @@
 				A84FA1C32661073F007F5A4B /* Sources */,
 				A84FA1C42661073F007F5A4B /* Frameworks */,
 				A84FA1C52661073F007F5A4B /* Resources */,
+				6253EEB3BD2EA849CEBBFB78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +349,7 @@
 				A84FA1E726610742007F5A4B /* Sources */,
 				A84FA1E826610742007F5A4B /* Frameworks */,
 				A84FA1E926610742007F5A4B /* Resources */,
+				2BC8F21190FAE25CFE24C850 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,6 +372,7 @@
 				TargetAttributes = {
 					A84FA1C62661073F007F5A4B = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					A84FA1DF26610742007F5A4B = {
 						CreatedOnToolsVersion = 12.1;
@@ -301,6 +432,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2BC8F21190FAE25CFE24C850 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IPMagix Task-IPMagix TaskUITests/Pods-IPMagix Task-IPMagix TaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IPMagix Task-IPMagix TaskUITests/Pods-IPMagix Task-IPMagix TaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IPMagix Task-IPMagix TaskUITests/Pods-IPMagix Task-IPMagix TaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3B6BB1BD2E5B2A68EB2447E4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,6 +469,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6253EEB3BD2EA849CEBBFB78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IPMagix Task/Pods-IPMagix Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IPMagix Task/Pods-IPMagix Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IPMagix Task/Pods-IPMagix Task-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8ACD8AF9D7EF53D93D5D3563 /* [CP] Check Pods Manifest.lock */ = {
@@ -374,10 +539,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A84FA1CF26610740007F5A4B /* ViewController.swift in Sources */,
+				A8EF55EA2663B65F00236DC5 /* UIScrollView+InfiniteScroll.m in Sources */,
+				A8EF54F026611C5D00236DC5 /* StringExtentions.swift in Sources */,
+				A8EF54D52661168600236DC5 /* PhotosTableViewCell.swift in Sources */,
+				A8EF55F02663B77400236DC5 /* CoreData.swift in Sources */,
+				A8EF55FD2663B8C000236DC5 /* CoreDataManger.swift in Sources */,
+				A8EF55C02663B1D700236DC5 /* LoadingSpinner.swift in Sources */,
+				A8EF553826628FD800236DC5 /* Photo.swift in Sources */,
+				A8EF557B2663075A00236DC5 /* Alert.swift in Sources */,
+				A8EF5581266308F100236DC5 /* FlickrApisPresenter.swift in Sources */,
+				A84FA1CF26610740007F5A4B /* ListPhotosViewController.swift in Sources */,
+				A8EF559B2663AA7C00236DC5 /* FullScreenPhotoViewController.swift in Sources */,
 				A84FA1CB26610740007F5A4B /* AppDelegate.swift in Sources */,
+				A8EF54E826611C0A00236DC5 /* UIImageExtentions.swift in Sources */,
+				A8EF54DD2661196200236DC5 /* PhotosViewModel.swift in Sources */,
+				A8EF55532663040700236DC5 /* FlickrResponse.swift in Sources */,
 				A84FA1D526610740007F5A4B /* IPMagix_Task.xcdatamodeld in Sources */,
 				A84FA1CD26610740007F5A4B /* SceneDelegate.swift in Sources */,
+				A8EF5576266306FC00236DC5 /* Networking.swift in Sources */,
+				A8EF55F52663B7D200236DC5 /* CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +734,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Y2SL74F47;
 				INFOPLIST_FILE = "IPMagix Task/Info.plist";
@@ -563,6 +744,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samy.IPMagix-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IPMagix Task/Helpers/IPMagix Task-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -574,6 +757,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Y2SL74F47;
 				INFOPLIST_FILE = "IPMagix Task/Info.plist";
@@ -583,6 +767,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samy.IPMagix-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IPMagix Task/Helpers/IPMagix Task-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
