@@ -31,8 +31,6 @@
 		A8EF559B2663AA7C00236DC5 /* FullScreenPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF559A2663AA7C00236DC5 /* FullScreenPhotoViewController.swift */; };
 		A8EF55C02663B1D700236DC5 /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF55BF2663B1D700236DC5 /* LoadingSpinner.swift */; };
 		A8EF55EA2663B65F00236DC5 /* UIScrollView+InfiniteScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EF55E92663B65F00236DC5 /* UIScrollView+InfiniteScroll.m */; };
-		A8EF55F02663B77400236DC5 /* Photos+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF55EF2663B77400236DC5 /* Photos+CoreData.swift */; };
-		A8EF55F52663B7D200236DC5 /* Photos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF55F42663B7D200236DC5 /* Photos+CoreDataProperties.swift */; };
 		A8EF55FD2663B8C000236DC5 /* CoreDataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF55FC2663B8C000236DC5 /* CoreDataManger.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,8 +86,6 @@
 		A8EF55E72663B65E00236DC5 /* IPMagix Task-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IPMagix Task-Bridging-Header.h"; sourceTree = "<group>"; };
 		A8EF55E82663B65F00236DC5 /* UIScrollView+InfiniteScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+InfiniteScroll.h"; sourceTree = "<group>"; };
 		A8EF55E92663B65F00236DC5 /* UIScrollView+InfiniteScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+InfiniteScroll.m"; sourceTree = "<group>"; };
-		A8EF55EF2663B77400236DC5 /* Photos+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photos+CoreData.swift"; sourceTree = "<group>"; };
-		A8EF55F42663B7D200236DC5 /* Photos+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photos+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A8EF55FC2663B8C000236DC5 /* CoreDataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManger.swift; sourceTree = "<group>"; };
 		A9FE31E5DA6C7E22FC729627 /* Pods_IPMagix_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPMagix_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CF5DE22AF9A833E2B58E59 /* Pods-IPMagix Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPMagix Task.release.xcconfig"; path = "Target Support Files/Pods-IPMagix Task/Pods-IPMagix Task.release.xcconfig"; sourceTree = "<group>"; };
@@ -280,8 +276,6 @@
 		A8EF55EE2663B6F000236DC5 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				A8EF55EF2663B77400236DC5 /* Photos+CoreData.swift */,
-				A8EF55F42663B7D200236DC5 /* Photos+CoreDataProperties.swift */,
 				A8EF55FC2663B8C000236DC5 /* CoreDataManger.swift */,
 			);
 			path = CoreData;
@@ -542,7 +536,6 @@
 				A8EF55EA2663B65F00236DC5 /* UIScrollView+InfiniteScroll.m in Sources */,
 				A8EF54F026611C5D00236DC5 /* StringExtentions.swift in Sources */,
 				A8EF54D52661168600236DC5 /* PhotosTableViewCell.swift in Sources */,
-				A8EF55F02663B77400236DC5 /* Photos+CoreData.swift in Sources */,
 				A8EF55FD2663B8C000236DC5 /* CoreDataManger.swift in Sources */,
 				A8EF55C02663B1D700236DC5 /* LoadingSpinner.swift in Sources */,
 				A8EF553826628FD800236DC5 /* Photo.swift in Sources */,
@@ -557,7 +550,6 @@
 				A84FA1D526610740007F5A4B /* IPMagix_Task.xcdatamodeld in Sources */,
 				A84FA1CD26610740007F5A4B /* SceneDelegate.swift in Sources */,
 				A8EF5576266306FC00236DC5 /* Networking.swift in Sources */,
-				A8EF55F52663B7D200236DC5 /* Photos+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

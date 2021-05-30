@@ -22,13 +22,15 @@ class CoreDataManager: NSObject {
         
         let managedContext = appDelegate.persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: PhotosEntitiy, in: managedContext)!
-        let moviePhoto = NSManagedObject(entity: entity, insertInto: managedContext) as! MoviePhotos
+        let moviePhoto = NSManagedObject(entity: entity, insertInto: managedContext) as! FlickrPhotos
 
         moviePhoto.farm = Int16(model.farm)
         moviePhoto.id = model.id
         moviePhoto.secret = model.secret
         moviePhoto.server = model.server
         moviePhoto.title = model.title
+        moviePhoto.imageURL = model.imageURL
+        moviePhoto.owner = model.owner
      
         do {
             try managedContext.save()

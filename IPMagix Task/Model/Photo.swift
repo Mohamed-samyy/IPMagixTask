@@ -8,6 +8,7 @@
 import Foundation
 
 struct Photo: Codable {
+    
     var farm: Int = 0
     var server: String = ""
     var id: String = ""
@@ -45,7 +46,6 @@ struct Photo: Codable {
         ispublic = try container.decode(Int.self, forKey: .ispublic)
         isfriend = try container.decode(Int.self, forKey: .isfriend)
         isfamily = try container.decode(Int.self, forKey: .isfamily)
-//        CoreDataManager.sharedInstance.save(model: self)
         imageURL = createImageURL()
 
     }

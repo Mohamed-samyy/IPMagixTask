@@ -19,29 +19,28 @@ class ListPhotosViewController: UIViewController {
     let adBannerURL = "https://cgtricks.com/wp-content/uploads/2017/04/LL-Ad-Banner.png"
     var pageNumber : Int = 1
     var isLoadMore : Bool = false
+    var isFromOfflineData : Bool = true
+    var coreDataArray: [FlickrPhotos] = []
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Movie's photos"
-        getPhotos(offset: pageNumber)
-
-    }
-    override func viewDidAppear(_ animated: Bool) {
+        photoViewModel.getApi {
+            photosTableView.reloadData()
+        }
+        getFlickrApi(pageNumber: 1)
         getLocalData()
+        getPhotos(offset: pageNumber)
 
     }
 
     func getPhotos(offset:Int){
-        if CoreDataManager.sharedInstance.getPhotos().count == 0 {
-            getFlickrApi(pageNumber: 1)
-        }else{
-            
-//            let storedRepos = CoreDataManager.sharedInstance.getPhotos(offset: offset) as! [MoviePhotos]
-            
+            let storedRepos = CoreDataManager.sharedInstance.getPhotos(offset: offset) as! [FlickrPhotos]
             
             if CoreDataManager.sharedInstance.getPhotos(offset: offset).count >= 10 {
                 isLoadMore = true
-//                finalArray.append(contentsOf: storedRepos)
+                coreDataArray.append(contentsOf: storedRepos)
                 self.photosTableView.finishInfiniteScroll()
                 self.photosTableView.reloadData()
             }
@@ -49,7 +48,6 @@ class ListPhotosViewController: UIViewController {
                 isLoadMore = false
                 self.photosTableView.finishInfiniteScroll()
             }
-        }
     }
     
     
@@ -65,7 +63,6 @@ class ListPhotosViewController: UIViewController {
     }
     
     func getFlickrApi(pageNumber: Int)  {
-        self.showLoader()
         let flickrApiObject = FlickrApisPresenter()
         flickrApiObject.getFlickrApis(pageNumber: pageNumber)
         flickrApiObject.flickrApisDelegate = self
@@ -74,22 +71,33 @@ class ListPhotosViewController: UIViewController {
 
 extension ListPhotosViewController :UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return photoViewModel.numberOfRowsInSection()
+        if isFromOfflineData{
+            return coreDataArray.count
+        } else {
+            return photoViewModel.numberOfRowsInSection()
+        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let viewType = photoViewModel.viewTypes[indexPath.row]
-        switch viewType {
-        case .ad:
+        if isFromOfflineData {
             let cell = tableView.dequeueReusableCell(withIdentifier: PHOTO_CELL_IDENTIFIER) as! PhotosTableViewCell
-            cell.testLabel.text = "Ad Banner"
-            cell.photo.setKFImage(imageUrl: adBannerURL)
+            cell.testLabel.text = coreDataArray[indexPath.row].title
+            cell.photo.setKFImage(imageUrl: coreDataArray[indexPath.row].imageURL ?? "")
             return cell
-        case .normalView(let photo):
-            let cell = tableView.dequeueReusableCell(withIdentifier: PHOTO_CELL_IDENTIFIER) as! PhotosTableViewCell
-            cell.testLabel.text = photo.title
-            cell.photo.setKFImage(imageUrl: photo.imageURL)
-            return cell
+        } else {
+            let viewType = photoViewModel.viewTypes[indexPath.row]
+            switch viewType {
+            case .ad:
+                let cell = tableView.dequeueReusableCell(withIdentifier: PHOTO_CELL_IDENTIFIER) as! PhotosTableViewCell
+                cell.testLabel.text = "Ad Banner"
+                cell.photo.setKFImage(imageUrl: adBannerURL)
+                return cell
+            case .normalView(let photo):
+                let cell = tableView.dequeueReusableCell(withIdentifier: PHOTO_CELL_IDENTIFIER) as! PhotosTableViewCell
+                cell.testLabel.text = photo.title
+                cell.photo.setKFImage(imageUrl: photo.imageURL)
+                return cell
+            }
         }
     }
     
@@ -114,21 +122,22 @@ extension ListPhotosViewController :UITableViewDelegate, UITableViewDataSource{
 
 extension ListPhotosViewController: FlickrApisProtocol{
     func APi_Success(response: FlickrResponseModel) {
-        self.hideLoader()
+        isFromOfflineData = false
         photoViewModel.photos = response.photos?.photo
+        coreDataArray = CoreDataManager.sharedInstance.getPhotos() as! [FlickrPhotos]
         if (response.photos?.photo?.count ?? 0) >= 10{
             isLoadMore =  true
         }
         photoViewModel.getApi {
             photosTableView.reloadData()
         }
+        photosTableView.finishInfiniteScroll()
     }
     
     func APi_Failed(errorMessage: String) {
-        self.hideLoader()
-        let alert = UIAlertController(title: "", message: "Something went wrong".localized, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Ok".localized, style: UIAlertAction.Style.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        isFromOfflineData = true
+        photosTableView.reloadData()
+        photosTableView.finishInfiniteScroll()
     }
     
 }

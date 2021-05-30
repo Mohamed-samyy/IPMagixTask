@@ -29,6 +29,11 @@ class FlickrApisPresenter: NSObject {
         Networking.RequestAPI(baseUrl: getBaseURL(currentPage: pageNumber), method: .get,model: flickrApisData) { (response, error) in
             if error == nil {
                 if let responseObject = response as? FlickrResponseModel{
+                    let allPhotosResponse: [Photo] = (responseObject.photos?.photo)!
+                    for item in  allPhotosResponse{
+                        CoreDataManager.sharedInstance.save(model: item)
+                    }
+
                     self.flickrApisDelegate?.APi_Success(response : responseObject)
                 }
             }else{
