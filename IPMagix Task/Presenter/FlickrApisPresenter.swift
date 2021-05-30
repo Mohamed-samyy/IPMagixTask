@@ -18,10 +18,10 @@ class FlickrApisPresenter: NSObject {
     static let sharedInstance = FlickrApisPresenter()
     var flickrApisDelegate : FlickrApisProtocol?
     var flickrApisData : FlickrResponseModel?
-    var perPageNumber = 20
+    var perPageNumber = 10
 
     func getBaseURL(currentPage: Int) -> String {
-        let baseURLString = "Https://www.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=50&text=New%20Movies%20posters&page=\(currentPage)&safe_search=1&per_page=20&api_key=d17378e37e555ebef55ab86c4180e8dc"
+        let baseURLString = "Https://www.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=50&text=New%20Movies%20posters&page=\(currentPage)&safe_search=1&per_page=10&api_key=d17378e37e555ebef55ab86c4180e8dc"
         return baseURLString
     }
     

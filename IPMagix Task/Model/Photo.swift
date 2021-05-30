@@ -45,9 +45,13 @@ struct Photo: Codable {
         ispublic = try container.decode(Int.self, forKey: .ispublic)
         isfriend = try container.decode(Int.self, forKey: .isfriend)
         isfamily = try container.decode(Int.self, forKey: .isfamily)
-//        imageURL = createImageURL()
+//        CoreDataManager.sharedInstance.save(model: self)
+        imageURL = createImageURL()
 
     }
-
+    
+    func createImageURL() -> String {
+        return ("https://farm\(String(describing: farm)).staticflickr.com/\(String(describing: server))/\(String(describing: id))_\(String(describing: secret)).jpg")
+    }
 }
 

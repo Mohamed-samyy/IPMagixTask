@@ -16,21 +16,47 @@ class ListPhotosViewController: UIViewController {
     
     var photoViewModel: PhotosViewModel = PhotosViewModel()
     let PHOTO_CELL_IDENTIFIER = "PhotosTableViewCell"
-    var pageNumber : Int = 0
-    var PageSize = 10
+    let adBannerURL = "https://cgtricks.com/wp-content/uploads/2017/04/LL-Ad-Banner.png"
+    var pageNumber : Int = 1
     var isLoadMore : Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "movie's photos"
-        getLocalData()
-        getFlickrApi(pageNumber: 1)
+        self.title = "Movie's photos"
+        getPhotos(offset: pageNumber)
 
     }
+    override func viewDidAppear(_ animated: Bool) {
+        getLocalData()
+
+    }
+
+    func getPhotos(offset:Int){
+        if CoreDataManager.sharedInstance.getPhotos().count == 0 {
+            getFlickrApi(pageNumber: 1)
+        }else{
+            
+//            let storedRepos = CoreDataManager.sharedInstance.getPhotos(offset: offset) as! [MoviePhotos]
+            
+            
+            if CoreDataManager.sharedInstance.getPhotos(offset: offset).count >= 10 {
+                isLoadMore = true
+//                finalArray.append(contentsOf: storedRepos)
+                self.photosTableView.finishInfiniteScroll()
+                self.photosTableView.reloadData()
+            }
+            else {
+                isLoadMore = false
+                self.photosTableView.finishInfiniteScroll()
+            }
+        }
+    }
+    
+    
     func getLocalData(){
         photosTableView.addInfiniteScroll { (table) in
             if self.isLoadMore {
-                self.pageNumber += 10
+                self.pageNumber += 1
                 self.getFlickrApi(pageNumber: self.pageNumber)
             }else{
                 table.finishInfiniteScroll()
@@ -43,10 +69,6 @@ class ListPhotosViewController: UIViewController {
         let flickrApiObject = FlickrApisPresenter()
         flickrApiObject.getFlickrApis(pageNumber: pageNumber)
         flickrApiObject.flickrApisDelegate = self
-    }
-
-    func createImageURL(farm: Int,server: String,id: String,secret: String) -> String {
-        return ("https://farm\(String(describing: farm)).staticflickr.com/\(String(describing: server))/\(String(describing: id))_\(String(describing: secret)).jpg")
     }
 }
 
@@ -61,13 +83,12 @@ extension ListPhotosViewController :UITableViewDelegate, UITableViewDataSource{
         case .ad:
             let cell = tableView.dequeueReusableCell(withIdentifier: PHOTO_CELL_IDENTIFIER) as! PhotosTableViewCell
             cell.testLabel.text = "Ad Banner"
-            cell.photo.setKFImage(imageUrl:  "")
+            cell.photo.setKFImage(imageUrl: adBannerURL)
             return cell
         case .normalView(let photo):
             let cell = tableView.dequeueReusableCell(withIdentifier: PHOTO_CELL_IDENTIFIER) as! PhotosTableViewCell
             cell.testLabel.text = photo.title
-            let imageurl = createImageURL(farm: photo.farm, server: photo.server, id: photo.id, secret: photo.secret)
-            cell.photo.setKFImage(imageUrl: imageurl)
+            cell.photo.setKFImage(imageUrl: photo.imageURL)
             return cell
         }
     }
@@ -78,10 +99,10 @@ extension ListPhotosViewController :UITableViewDelegate, UITableViewDataSource{
         switch photo {
         case .ad:
             fullScreenPhotoVC.imageTitle = "Ad Banner"
+            fullScreenPhotoVC.imageURL = adBannerURL
         case .normalView(let photo):
             fullScreenPhotoVC.imageTitle = photo.title
-            let imageurl = createImageURL(farm: photo.farm, server: photo.server, id: photo.id, secret: photo.secret)
-            fullScreenPhotoVC.imageURL = imageurl
+            fullScreenPhotoVC.imageURL = photo.imageURL
         }
         self.navigationController?.pushViewController(fullScreenPhotoVC, animated: true)
     }
@@ -95,6 +116,9 @@ extension ListPhotosViewController: FlickrApisProtocol{
     func APi_Success(response: FlickrResponseModel) {
         self.hideLoader()
         photoViewModel.photos = response.photos?.photo
+        if (response.photos?.photo?.count ?? 0) >= 10{
+            isLoadMore =  true
+        }
         photoViewModel.getApi {
             photosTableView.reloadData()
         }

@@ -13,17 +13,13 @@ import CoreData
 extension MoviePhotos {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<MoviePhotos> {
-        return NSFetchRequest<MoviePhotos>(entityName: "MoviePhotos")
+        return NSFetchRequest<MoviePhotos>(entityName: "FlickrPhotos")
     }
 
-    @NSManaged public var farm: Int
+    @NSManaged public var farm: Int16
     @NSManaged public var server: String?
     @NSManaged public var id: String?
     @NSManaged public var secret: String?
-    @NSManaged public var owner: String?
     @NSManaged public var title: String?
-    @NSManaged public var ispublic: Int
-    @NSManaged public var isfriend: Int
-    @NSManaged public var isfamily: Int
 
 }

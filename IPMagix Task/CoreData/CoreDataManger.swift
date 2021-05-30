@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 
+let PhotosEntitiy = "FlickrPhotos"
 
 class CoreDataManager: NSObject {
     
@@ -20,21 +21,14 @@ class CoreDataManager: NSObject {
         }
         
         let managedContext = appDelegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: "MoviePhotos", in: managedContext)!
+        let entity = NSEntityDescription.entity(forEntityName: PhotosEntitiy, in: managedContext)!
         let moviePhoto = NSManagedObject(entity: entity, insertInto: managedContext) as! MoviePhotos
 
-        moviePhoto.farm = model.farm
+        moviePhoto.farm = Int16(model.farm)
         moviePhoto.id = model.id
         moviePhoto.secret = model.secret
         moviePhoto.server = model.server
         moviePhoto.title = model.title
-        moviePhoto.owner = model.owner
-        moviePhoto.isfamily = model.isfamily
-        moviePhoto.isfriend = model.isfriend
-        moviePhoto.ispublic = model.ispublic
-
-
-
      
         do {
             try managedContext.save()
@@ -50,7 +44,7 @@ class CoreDataManager: NSObject {
         }
 
         let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "MoviePhotos")
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: PhotosEntitiy)
 
         fetchRequest.fetchLimit = 10
         fetchRequest.fetchOffset = offset
